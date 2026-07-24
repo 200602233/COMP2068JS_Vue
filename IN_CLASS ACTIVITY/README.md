@@ -18,12 +18,8 @@ Replace generated code with skeleton set-up code:
 ```
 <!-- All Vue projects NEED a script & template -->
 
-<script>
-// export default: tells Vue that this is the MAIN component
-// everything inside belongs to that component
-export default{
+<script setup>
 
-}
 </script>
 
 <template>

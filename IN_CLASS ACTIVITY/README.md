@@ -1,5 +1,7 @@
 # In-Class Activity
 
+No files should be added, they will be created as we present :)
+
 ## Step 1: Setting up our Vue Project
 Create a new project and open Terminal to run:
 

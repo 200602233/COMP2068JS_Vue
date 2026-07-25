@@ -26,23 +26,23 @@ const results = ref(0)
 
 // https://vuejs.org/guide/essentials/event-handling.html
 // fucntions
-function add(0){
+function add(){
 
 }
 
-function minus(0){
+function minus(){
     
 }
 
-function multiply(0){
+function multiply(){
     
 }
 
-function divide(0){
+function divide(){
     
 }
 
-function clear(0){
+function clear(){
     
 }
 </script>
@@ -52,14 +52,31 @@ function clear(0){
     <!-- https://vuejs.org/guide/essentials/template-syntax.html -->
     <!-- add layout here, div, h1, inputs,etc.. -->
      <!-- then connect to above functions -->
-      <!-- add class or id's for easier nav (also ref for style.css) -->
-    <div>
-        <!-- https://vuejs.org/guide/essentials/forms.html -->
-         <!-- inputs -->
+      <!-- add class OR id's for easier nav (also ref for style.css) -->
+    <div id="calc">
+        <!-- Title (maybe we can linked the web for vue in the word Vue) -->
+        <h1>Simple Calculator Using Vue</h1>
 
+        <!-- Calculator -->
+        <!-- results section -->
+        <div id="results">
+            {{ results }}
+        </div>
+
+        <!-- https://vuejs.org/guide/essentials/forms.html -->
+        <!-- inputs -->
+        <input v-model="num1" type="number">
+        <input v-model="num2" type="number">
         
-         <!-- https://vuejs.org/guide/essentials/event-handling.html -->
-        <!-- @click -->
+        <!-- https://vuejs.org/guide/essentials/event-handling.html -->
+        <!-- @click - refers to functions we declared above in the script-->
+        <div class="actionBtns">
+            <button @click="add">+</button>
+            <button @click="minus">-</button>
+            <button @click="multiply">*</button>
+            <button @click="divide">/</button>
+            <button @click="clear" id="clear">Clear</button>
+        </div>
     </div>
 
 </template>

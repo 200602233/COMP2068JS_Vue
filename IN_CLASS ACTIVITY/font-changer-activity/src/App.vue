@@ -23,11 +23,22 @@ function decrease(){
 </script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <!-- templates contain HTML that appears on web -->
+
+  <!-- text for adjustment -->
+   <!-- :style - allows Vue to change the CSS using the variable fontSize
+   + 'px' converts the num to CSS  
+   -->
+   <!-- https://vuejs.org/guide/essentials/class-and-style.html#binding-to-arrays -->
+   <h1 :style="{fontSize: fontSize + 'px'}">Hello World, welcome to Vue!</h1>
+
+   <!-- Buttons to increase & decrease text -->
+
+   <!-- @click: "" - listens to our functions we made prior, increase and decrease -->
+   <!-- https://vuejs.org/guide/essentials/event-handling.html -->
+   <button @click="increase">+</button>
+
+   <button @click="decrease">-</button>
 </template>
 
 <style scoped></style>

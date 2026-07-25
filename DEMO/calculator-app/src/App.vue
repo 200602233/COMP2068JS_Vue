@@ -27,23 +27,30 @@ const results = ref(0)
 // https://vuejs.org/guide/essentials/event-handling.html
 // fucntions
 function add(){
-
+    results.value = Number(num1.value) + Number(num2.value)
 }
 
 function minus(){
-    
+    results.value = Number(num1.value) - Number(num2.value)
 }
 
 function multiply(){
-    
+    results.value = Number(num1.value) * Number(num2.value)
 }
 
 function divide(){
-    
+    // if statement if user tries to divide by 0
+    if (Number(num2.value == 0)){
+        results.value = "Invalid! Cannot divide by zero"
+    } else{
+        results.value = Number(num1.value) / Number(num2.value)
+    }
 }
 
 function clear(){
-    
+    results.value = 0
+    num1.value = 0
+    num2.value = 0
 }
 </script>
 

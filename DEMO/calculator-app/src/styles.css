@@ -57,3 +57,38 @@ h1{
     margin-bottom: 20px;
 }
 
+/* user inputs (num1 and num2) */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
+
+.actionBtns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+/* each btn style */
+button {
+    font-size: 27px;
+    background-color: rgb(194, 130, 13);
+    color: white;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 10px;
+    border: none;
+}
+/* hover effect for btn */
+button:hover {
+   opacity: 0.9;
+}
+/* clear btn only caling id to make it two btns length */
+#clear {
+    grid-column: span 2;
+}
+ 
